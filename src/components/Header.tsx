@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { MobileNav } from "./MobileNav";
 import { AboutDropdown } from "./AboutDropdown";
+import { Logo } from "./Logo";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -15,9 +16,10 @@ export function Header() {
       <div className="mx-auto flex h-16 max-w-5xl items-center justify-between gap-4 px-4 sm:px-6">
         <Link
           href="/"
-          className="text-xl font-semibold tracking-tight text-zinc-900 focus:outline-none focus:ring-2 focus:ring-emerald-500 dark:text-zinc-50"
+          className="rounded focus:outline-none focus:ring-2 focus:ring-emerald-500"
+          aria-label="Cottonwood Rose Learning Community — Home"
         >
-          CRLC
+          <Logo />
         </Link>
         <nav
           aria-label="Main navigation"
