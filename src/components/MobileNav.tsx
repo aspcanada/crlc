@@ -26,7 +26,7 @@ export function MobileNav() {
   }
 
   return (
-    <div className="md:hidden">
+    <div className="relative md:hidden">
       <button
         type="button"
         onClick={() => setOpen(!open)}
@@ -49,7 +49,7 @@ export function MobileNav() {
         id="mobile-menu"
         role="region"
         aria-labelledby="mobile-menu-button"
-        className={`absolute right-4 top-16 z-50 w-60 rounded-lg border border-zinc-200 bg-white py-2 shadow-lg dark:border-zinc-700 dark:bg-zinc-900 ${open ? "block" : "hidden"}`}
+        className={`absolute right-0 top-full z-50 mt-2 w-60 rounded-lg border border-zinc-200 bg-white py-2 shadow-lg dark:border-zinc-700 dark:bg-zinc-900 ${open ? "block" : "hidden"}`}
       >
         {/* Home */}
         <Link
