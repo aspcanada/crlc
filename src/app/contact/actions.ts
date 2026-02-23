@@ -1,5 +1,7 @@
 "use server";
 
+import { Resend } from "resend";
+
 export type ContactState = {
   status: "idle" | "success" | "error";
   message?: string;
@@ -23,14 +25,21 @@ export async function submitContact(
     return { status: "error", message: "Please enter a valid email address." };
   }
 
-  // In production, forward to cottonwoodrosesociety@gmail.com via Resend / Nodemailer.
-  console.log("[Contact]", {
-    name,
-    email,
-    subject,
-    message,
-    submittedAt: new Date().toISOString(),
-  });
+  const to = process.env.CONTACT_EMAIL;
+  const apiKey = process.env.RESEND_API_KEY;
+
+  if (to && apiKey) {
+    const resend = new Resend(apiKey);
+    await resend.emails.send({
+      from: "CRLC Website <onboarding@resend.dev>",
+      to,
+      replyTo: email,
+      subject: `[CRLC Contact] ${subject ?? "New message"} — ${name}`,
+      text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject ?? "—"}\n\n${message}`,
+    });
+  } else {
+    console.log("[Contact — no RESEND_API_KEY] →", to, { name, email, subject, message });
+  }
 
   return { status: "success" };
 }
