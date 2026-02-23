@@ -34,7 +34,8 @@ Copy `.env.example` to `.env.local` and set:
 - `src/app/` — Routes and pages (Home, Enrollment, Mentor Proposal, Resources, Contact).
 - `src/components/` — Header, Footer, mobile nav, and home page sections.
 - `src/data/` — Content and structured data (home copy, resources links, contacts). Sensitive values (e.g. CRC code) are read from env in server components.
-- **Resources** (`/resources`) is password-protected; only enrolled families get the shared password.
+- **Resources** (`/resources`) is password-protected; access via the **Parent Login** button in the header. Only enrolled families get the shared password.
+- **Images:** Home page uses Unsplash placeholders (hero, program, educators, land, host family). Replace with your own photos by swapping the image URLs in the home section components or adding files under `public/images/` and updating the components.
 
 ## Deployment
 

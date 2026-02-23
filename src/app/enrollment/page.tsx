@@ -1,62 +1,56 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-
-const ENROLLMENT_FORM_URL =
-  "https://docs.google.com/forms/d/1U9fKJprO_Smh11k_NXuLpMhPVlM5To5vKtjExpE4OFk/edit";
+import Image from "next/image";
+import { EnrollmentForm } from "./EnrollmentForm";
 
 export const metadata: Metadata = {
   title: "Enrollment — CRLC",
   description:
-    "Apply to join the Cottonwood Rose Learning Community. Best fit model, open house for families.",
+    "Apply to join the Cottonwood Rose Learning Community. We operate on a best-fit model and host an Open House before confirming placements.",
 };
 
 export default function EnrollmentPage() {
   return (
-    <div className="px-4 py-12 sm:px-6">
-      <div className="mx-auto max-w-2xl space-y-8">
-        <h1 className="text-3xl font-bold text-zinc-900 dark:text-zinc-50">
-          Join the adventure!
-        </h1>
-        <p className="text-lg text-zinc-700 dark:text-zinc-300">
-          Hello!
-        </p>
-        <p className="text-zinc-700 dark:text-zinc-300">
-          If your family is interested in joining our program we invite you to
-          fill out our enrollment application. We operate on a best fit model
-          that takes into consideration the balance of each cohort as well as our
-          volunteer requirements.
-        </p>
-        <p className="text-zinc-700 dark:text-zinc-300">
-          Applications are reviewed in the spring to determine available
-          placements. Before confirming enrolment, we will host an Open House
-          where families can visit the land, meet our educators, and learn about
-          our approach.
-        </p>
-        <p className="text-zinc-700 dark:text-zinc-300">
-          This event helps ensure a good fit for both the child and the
-          community.
-        </p>
-        <p className="text-sm text-zinc-600 dark:text-zinc-400">
-          Please apply only in the year your child will be of school age.
-        </p>
-        <div className="pt-4">
-          <a
-            href={ENROLLMENT_FORM_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-full bg-emerald-600 px-6 py-3 font-medium text-white transition-colors hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 dark:bg-emerald-500 dark:hover:bg-emerald-600"
-          >
-            Enrollment Application
-          </a>
+    <div className="bg-white dark:bg-zinc-950">
+      {/* Hero */}
+      <div className="relative h-72 overflow-hidden sm:h-96">
+        <Image
+          src="/images/enrollment-hero.jpg"
+          alt="Families at Cottonwood Rose Learning Community"
+          fill
+          priority
+          className="object-cover object-center"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/80 via-zinc-900/30 to-transparent" aria-hidden />
+        <div className="absolute bottom-0 left-0 right-0 px-6 pb-10 text-center sm:px-10">
+          <p className="mb-2 inline-block rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-white/80 backdrop-blur-sm">
+            Join the Community
+          </p>
+          <h1 className="text-3xl font-bold text-white sm:text-4xl">
+            Enrollment Inquiry
+          </h1>
         </div>
-        <p className="pt-4">
-          <Link
-            href="/"
-            className="text-emerald-700 hover:underline dark:text-emerald-400"
-          >
-            Back to home
-          </Link>
-        </p>
+      </div>
+
+      {/* Body */}
+      <div className="mx-auto max-w-2xl px-4 py-14 sm:px-6">
+        <div className="mb-10 space-y-4 text-zinc-700 dark:text-zinc-300">
+          <p className="text-lg font-medium text-zinc-900 dark:text-zinc-50">
+            Ready to explore if CRLC is a fit for your family?
+          </p>
+          <p>
+            We operate on a best-fit model, taking into consideration the balance
+            of each cohort and our volunteer requirements. Fill out this form and
+            we&apos;ll reach out to get the conversation started.
+          </p>
+          <p>
+            Applications are reviewed in the spring. Before confirming enrolment
+            we&apos;ll invite your family to an Open House on the land—a chance to meet
+            our educators and feel into the community for yourselves.
+          </p>
+        </div>
+
+        <EnrollmentForm />
       </div>
     </div>
   );

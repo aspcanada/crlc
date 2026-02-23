@@ -20,8 +20,9 @@ export function Footer() {
               href="/resources"
               className="font-medium text-emerald-700 underline-offset-2 hover:underline dark:text-emerald-400"
             >
-              Resources for registered families
-            </Link>
+              Parent Login
+            </Link>{" "}
+            (registered families)
           </p>
         </div>
       </div>
