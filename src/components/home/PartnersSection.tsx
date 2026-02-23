@@ -6,14 +6,16 @@ const partnerCards = [
     logoAlt: "NIDES / Heartwood Learning Communities logo",
     name: "Heartwood Learning Communities",
     url: "https://www.navigatenides.com/index.php/heartwood/",
+    invert: true,
     description:
       "Offered in partnership with NIDES, Heartwood provides BC-certified teachers who weave academic excellence into our nature-based program. They cover numeracy, literacy, social sciences and sciences—finessed through the lens of the land.",
   },
   {
-    logo: "/images/partner-hihand.png",
+    logo: "/images/partner-hihand.svg",
     logoAlt: "Hand in Hand Nature Education logo",
     name: "Hand in Hand Nature Education",
     url: "https://hand-in-handeducation.com/",
+    invert: true,
     description:
       "Joyful, play-based learning in the outdoors. Experienced educators guide children through songs, stories, and hands-on discovery in forests, fields, and streams—building resilience, wonder, and a lifelong love of nature.",
   },
@@ -22,6 +24,7 @@ const partnerCards = [
     logoAlt: "Danu Folk School logo",
     name: "Danu Folk School",
     url: undefined,
+    invert: false,
     description:
       "Rich, hands-on, heart-centered learning rooted in nature exploration, craft, herbal wisdom, storytelling, and seasonal rhythms. They create warm, inclusive spaces where curiosity, belonging, and connection to land flourish.",
   },
@@ -58,7 +61,7 @@ export function PartnersSection() {
                   alt={p.logoAlt}
                   width={120}
                   height={48}
-                  className="h-10 w-auto object-contain brightness-0 invert"
+                  className={`h-10 w-auto object-contain ${p.invert ? "brightness-0 invert" : "rounded-md"}`}
                 />
               </div>
               <h3 className="mb-3 text-lg font-semibold text-white">

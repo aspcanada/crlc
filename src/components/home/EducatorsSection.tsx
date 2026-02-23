@@ -23,7 +23,7 @@ export function EducatorsSection() {
             src="/images/educator-1.jpg"
             alt="The CRLC educator team"
             fill
-            className="object-cover object-center"
+            className="object-cover object-[center_30%]"
             sizes="(max-width: 1024px) 100vw, 80vw"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/60 to-transparent" aria-hidden />
