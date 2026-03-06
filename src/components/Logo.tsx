@@ -1,24 +1,51 @@
 export function Logo({ className = "" }: { className?: string }) {
   return (
     <span className={`inline-flex items-center gap-2.5 ${className}`}>
-      {/* Leaf mark */}
+      {/* Book + leaf mark (edu + nature) */}
       <svg
-        width="28"
+        width="32"
         height="32"
-        viewBox="0 0 28 32"
+        viewBox="0 0 32 32"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
+        className="shrink-0"
       >
-        <path d="M14 27 C7 20 4 10 13 5 C11 13 13 21 20 25 Z" fill="#059669" />
-        <path d="M14 27 C21 20 24 10 15 5 C17 13 15 21 8 25 Z" fill="#10b981" />
-        <line
-          x1="14" y1="27" x2="14" y2="31"
-          stroke="#059669" strokeWidth="1.5" strokeLinecap="round"
+        {/* Open book: left page */}
+        <path
+          d="M6 9 L6 24 C6 26 10 26 14 25 L14 8 C10 7 6 8 6 9 Z"
+          strokeWidth="0.6"
+          className="fill-zinc-200 stroke-zinc-400 dark:fill-zinc-700 dark:stroke-zinc-600"
         />
-        <circle cx="10" cy="31.5" r="0.9" fill="#6ee7b7" />
-        <circle cx="14" cy="32" r="1" fill="#6ee7b7" />
-        <circle cx="18" cy="31.5" r="0.9" fill="#6ee7b7" />
+        {/* Right page */}
+        <path
+          d="M18 8 L18 25 C22 26 26 26 26 24 L26 9 C26 8 22 7 18 8 Z"
+          strokeWidth="0.6"
+          className="fill-zinc-200 stroke-zinc-400 dark:fill-zinc-700 dark:stroke-zinc-600"
+        />
+        {/* Spine */}
+        <path
+          d="M14 8 L16 7 L18 8 L18 25 L16 26 L14 25 Z"
+          className="fill-zinc-300 dark:fill-zinc-600"
+        />
+        {/* Leaf from spine */}
+        <path
+          d="M16 12 C11 9 9 14 13 18 C16 16 19 18 23 14 C27 11 21 8 16 12 Z"
+          fill="#059669"
+        />
+        <path
+          d="M16 12 C21 9 23 14 19 18 C16 16 13 18 9 14 C5 11 11 8 16 12 Z"
+          fill="#10b981"
+        />
+        <line
+          x1="16"
+          y1="18"
+          x2="16"
+          y2="24"
+          stroke="#059669"
+          strokeWidth="1.2"
+          strokeLinecap="round"
+        />
       </svg>
 
       {/* Wordmark */}
