@@ -14,9 +14,9 @@ const checkboxClass =
   "h-4 w-4 rounded border-zinc-300 text-emerald-600 focus:ring-emerald-500 dark:border-zinc-600";
 
 const ageGroups = [
-  { id: "k2", label: "K–2 (12:00–1:30 pm)" },
-  { id: "35", label: "Grades 3–5 (1:30–2:45 pm)" },
-  { id: "68", label: "Grades 6–8 (1:30–2:45 pm)" },
+  { id: "seeds", label: "Seeds (K–2) — morning 11:30–12:30 or afternoon 1:00–2:15" },
+  { id: "sprouts", label: "Sprouts (Gr 3–5) — morning or afternoon block" },
+  { id: "saplings", label: "Saplings (Gr 6–8) — morning or afternoon block" },
 ];
 
 export function MentorForm() {
@@ -146,7 +146,7 @@ export function MentorForm() {
           className={inputClass}
         />
         <p className="text-xs text-zinc-400 dark:text-zinc-500">
-          Sessions run Tue / Wed / Thu during the school year.
+          Mentorship blocks are Tue / Wed / Thu: 11:30–12:30 and 1:00–2:15. We follow the SD‑71 calendar.
         </p>
       </div>
 

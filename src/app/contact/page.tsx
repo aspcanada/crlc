@@ -63,7 +63,7 @@ export default function ContactPage() {
               </h2>
               <p className="text-sm text-zinc-600 dark:text-zinc-400">
                 Tuesday, Wednesday &amp; Thursday<br />
-                during the school year.
+                during the school year. We follow the SD‑71 schedule for Pro-D days, stats and holidays.
               </p>
             </div>
 

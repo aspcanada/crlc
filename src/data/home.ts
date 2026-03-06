@@ -16,7 +16,7 @@ export const program = {
   title: "The start of something good",
   description: `The Cottonwood Rose Learning Community is a nature-based education program in Black Creek at the north end of the Comox Valley. The program is operated by the Cottonwood Rose Farm Forest and Nature Learning Society.
 
-Ours is a K-9 program that brings a nature based curriculum to life through partnership with Heartwood Learning Communities through NIDES at SD-71 and Hand in Hand Nature Education. The program is made viable through a supportive community of parent volunteers and mentors who further enrich and enliven the journey.
+Ours is a K-9 program that brings a nature based curriculum to life through partnership with Heartwood Learning Communities through NIDES at SD-71 and Hand-in-Hand Nature Education. The program is made viable through a supportive community of parent volunteers and mentors who further enrich and enliven the journey.
 
 For 3 days each week of the school year, (Tue/Wed/Thur) 3 mixed age cohorts engage with the learning objectives of the BC-curriculum but finessed through the lens of nature. Mondays and Fridays are home learning days where kids will continue their project based work at home.`,
   volunteerNote:
@@ -37,18 +37,18 @@ Families are supported with flexible learning pathways that honor each child's c
       "The Heartwood/NIDES partners bring 2 BC certified teachers to the program. These educators bring the academics, focused on numeracy and literacy, social sciences and sciences to the kids. The curriculum is finessed through the lens of nature and crafted alongside the nature educators so that there is some continuity in learning outcomes.",
   },
   {
-    name: "Hand in Hand Nature Education & Danu Folk School",
+    name: "Hand-in-Hand Nature Education & Danu Folk School",
     items: [
       {
-        name: "Hand in Hand Nature Education",
+        name: "Hand-in-Hand Nature Education",
         url: "https://hand-in-handeducation.com/",
-        description: `Hand in Hand Nature Education offers children a joyful introduction to learning in the outdoors.
+        description: `Hand-in-Hand Nature Education offers children a joyful introduction to learning in the outdoors.
 
 The program emphasizes play, exploration, and relationship with the natural world.
 
 Experienced educators guide children through songs, stories, and hands-on discovery in forests, fields, and streams.
 
-By fostering curiosity, creativity, and care for the earth, Hand in Hand helps young learners build strong foundations for both academic and social growth—nurturing resilience, wonder, and a lifelong love of nature.`,
+By fostering curiosity, creativity, and care for the earth, Hand-in-Hand helps young learners build strong foundations for both academic and social growth—nurturing resilience, wonder, and a lifelong love of nature.`,
       },
       {
         name: "Danu Folk School",
@@ -91,7 +91,7 @@ Supported by global Workaway visitors and families who now call this land home, 
 };
 
 export const hostFamily = {
-  title: "A parting word from the host family",
+  title: "A word from the host family",
   message: `Hey folks!
 
 We are Julianna, John, Finn and Christina.

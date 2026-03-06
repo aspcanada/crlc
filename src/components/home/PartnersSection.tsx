@@ -12,8 +12,8 @@ const partnerCards = [
   },
   {
     logo: "/images/partner-hihand.svg",
-    logoAlt: "Hand in Hand Nature Education logo",
-    name: "Hand in Hand Nature Education",
+    logoAlt: "Hand-in-Hand Nature Education logo",
+    name: "Hand-in-Hand Nature Education",
     url: "https://hand-in-handeducation.com/",
     invert: true,
     description:

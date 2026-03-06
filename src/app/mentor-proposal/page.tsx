@@ -10,11 +10,11 @@ export const metadata: Metadata = {
 const highlights = [
   {
     icon: "🕛",
-    text: "Sessions run Tue / Wed / Thu between 12:00 and 2:45 pm",
+    text: "Mentorship blocks run Tue / Wed / Thu: morning 11:30–12:30 and afternoon 1:00–2:15",
   },
   {
-    icon: "👶",
-    text: "12:00–1:30 pm is our K–2 cohort; 1:30–2:45 pm is Grades 3–8 together",
+    icon: "🌱",
+    text: "Three cohorts: Seeds (K–2), Sprouts (Gr 3–5), Saplings (Gr 6–8) — we’ll match you to a block",
   },
   {
     icon: "💸",
@@ -58,7 +58,7 @@ export default function MentorProposalPage() {
             We&apos;d love to hear from you.
           </p>
           <p>
-            Our Mentorship Block invites community members to share their skills,
+            Our mentorship blocks invite community members to share their skills,
             passions, and trades with students in hands-on, land-based sessions.
             We welcome proposals that engage children through creativity, nature
             connection, craft, science, or cultural practice.
@@ -68,11 +68,30 @@ export default function MentorProposalPage() {
             workshop and back again — planting and harvesting with a regenerative
             farmer, building and crafting with a shop teacher, making seasonal
             tools by hand, gathering wild herbs for medicine making, and exploring
-            sound and energy with a vibrational healing guide.
+            sound and energy with a vibrational healing guide. This spring we&apos;re
+            also running a full day of Drum Making with Sarah and Indigenous guests.
           </p>
           <p>
             Selected mentors receive orientation and scheduling support before
             their sessions begin.
+          </p>
+        </div>
+
+        {/* Schedule at a glance - from Spring 2026 DRAFT */}
+        <div className="mb-10 rounded-2xl border border-amber-200 bg-amber-50/50 p-5 dark:border-amber-900 dark:bg-amber-950/20">
+          <h2 className="mb-3 text-lg font-semibold text-zinc-900 dark:text-zinc-50">
+            Mentorship blocks at a glance (Spring 2026)
+          </h2>
+          <p className="mb-4 text-sm text-zinc-600 dark:text-zinc-400">
+            Morning block 11:30–12:30 · Lunch 12:30–1:30 · Afternoon block 1:00–2:15. We follow the SD‑71 calendar for Pro-D days, stats and holidays.
+          </p>
+          <ul className="space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
+            <li><strong>Tuesday</strong> — AM: Saplings &amp; Seeds (e.g. Drum Making). PM: Sprouts.</li>
+            <li><strong>Wednesday</strong> — PM: Sprouts mentorship; Seeds with Hand-in-Hand mentor.</li>
+            <li><strong>Thursday</strong> — AM: Sprouts (1.5 hrs); Seeds with Hand-in-Hand. PM: Saplings; Seeds.</li>
+          </ul>
+          <p className="mt-3 text-xs text-zinc-500 dark:text-zinc-400">
+            Exact cohort and time depend on the term and mentor; we&apos;ll work with you to find the right slot.
           </p>
         </div>
 
