@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { MentorForm } from "./MentorForm";
 
 export const metadata: Metadata = {
   title: "Mentor Proposal — CRLC",
@@ -10,7 +9,7 @@ export const metadata: Metadata = {
 const highlights = [
   {
     icon: "🕛",
-    text: "Mentorship blocks run Tue / Wed / Thu: morning 11:30–12:30 and afternoon 1:00–2:15",
+    text: "Mentorship blocks run Tue / Wed / Thu with varying times by cohort",
   },
   {
     icon: "🌱",
@@ -46,8 +45,8 @@ export default function MentorProposalPage() {
           Inspire, connect&nbsp;&amp; share!
         </h1>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-amber-100">
-          Mentorships bring your passion to the kids — and they&apos;re a big part of
-          the magic at Cottonwood Rose.
+          Mentorships bring your passion to the kids — and they&apos;re a big
+          part of the magic at Cottonwood Rose.
         </p>
       </div>
 
@@ -58,18 +57,18 @@ export default function MentorProposalPage() {
             We&apos;d love to hear from you.
           </p>
           <p>
-            Our mentorship blocks invite community members to share their skills,
-            passions, and trades with students in hands-on, land-based sessions.
-            We welcome proposals that engage children through creativity, nature
-            connection, craft, science, or cultural practice.
+            Our mentorship blocks invite community members to share their
+            skills, passions, and trades with students in hands-on, land-based
+            sessions. We welcome proposals that engage children through
+            creativity, nature connection, craft, science, or cultural practice.
           </p>
           <p>
             So far this year, our mentors have taken kids from the garden to the
-            workshop and back again — planting and harvesting with a regenerative
-            farmer, building and crafting with a shop teacher, making seasonal
-            tools by hand, gathering wild herbs for medicine making, and exploring
-            sound and energy with a vibrational healing guide. This spring we&apos;re
-            also running a full day of Drum Making with Sarah and Indigenous guests.
+            workshop and back again — planting and harvesting with a
+            regenerative farmer, building and crafting with a shop teacher,
+            making seasonal tools by hand, gathering wild herbs for medicine
+            making, and exploring sound and energy with a vibrational healing
+            guide.
           </p>
           <p>
             Selected mentors receive orientation and scheduling support before
@@ -77,21 +76,28 @@ export default function MentorProposalPage() {
           </p>
         </div>
 
-        {/* Schedule at a glance - from Spring 2026 DRAFT */}
+        {/* Schedule at a glance - Spring 2026 */}
         <div className="mb-10 rounded-2xl border border-amber-200 bg-amber-50/50 p-5 dark:border-amber-900 dark:bg-amber-950/20">
           <h2 className="mb-3 text-lg font-semibold text-zinc-900 dark:text-zinc-50">
             Mentorship blocks at a glance (Spring 2026)
           </h2>
           <p className="mb-4 text-sm text-zinc-600 dark:text-zinc-400">
-            Morning block 11:30–12:30 · Lunch 12:30–1:30 · Afternoon block 1:00–2:15. We follow the SD‑71 calendar for Pro-D days, stats and holidays.
+            We follow the SD‑71 calendar for Pro-D days, stats and holidays.
           </p>
           <ul className="space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
-            <li><strong>Tuesday</strong> — AM: Saplings &amp; Seeds (e.g. Drum Making). PM: Sprouts.</li>
-            <li><strong>Wednesday</strong> — PM: Sprouts mentorship; Seeds with Hand-in-Hand mentor.</li>
-            <li><strong>Thursday</strong> — AM: Sprouts (1.5 hrs); Seeds with Hand-in-Hand. PM: Saplings; Seeds.</li>
+            <li>
+              <strong>Tuesday</strong> — 10:15–11:45 (Gr 7–9), 12:45–2:15 (Gr 3–5).
+            </li>
+            <li>
+              <strong>Wednesday</strong> — 12:45–2:00 (K–2), 12:45–2:15 (Gr 3–5).
+            </li>
+            <li>
+              <strong>Thursday</strong> — 1:00–2:00 (K–2), 12:45–2:15 (Gr 7–9).
+            </li>
           </ul>
           <p className="mt-3 text-xs text-zinc-500 dark:text-zinc-400">
-            Exact cohort and time depend on the term and mentor; we&apos;ll work with you to find the right slot.
+            Exact cohort and time depend on the term and mentor; we&apos;ll work
+            with you to find the right slot.
           </p>
         </div>
 
@@ -111,11 +117,15 @@ export default function MentorProposalPage() {
         </ul>
 
         {/* Form */}
-        <div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-6 dark:border-zinc-800 dark:bg-zinc-900 sm:p-8">
-          <h2 className="mb-6 text-2xl font-bold text-zinc-900 dark:text-zinc-50">
+        <div className="text-center">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdsvH1XAdTy8CLba2ilmhJlKoTzAjT4KhgH9rKC1BtVepVgkQ/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-full bg-amber-700 px-6 py-3 text-sm font-semibold uppercase tracking-widest text-white transition hover:bg-amber-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-700 dark:bg-amber-400 dark:text-amber-950 dark:hover:bg-amber-300 dark:focus-visible:outline-amber-300"
+          >
             Mentor Proposal Form
-          </h2>
-          <MentorForm />
+          </a>
         </div>
       </div>
     </div>
