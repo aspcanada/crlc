@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { EnrollmentForm } from "./EnrollmentForm";
 
 export const metadata: Metadata = {
   title: "Enrollment — CRLC",
@@ -21,7 +20,10 @@ export default function EnrollmentPage() {
           className="object-cover object-center"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/80 via-zinc-900/30 to-transparent" aria-hidden />
+        <div
+          className="absolute inset-0 bg-gradient-to-t from-zinc-900/80 via-zinc-900/30 to-transparent"
+          aria-hidden
+        />
         <div className="absolute bottom-0 left-0 right-0 px-6 pb-10 text-center sm:px-10">
           <p className="mb-2 inline-block rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-white/80 backdrop-blur-sm">
             Join the Community
@@ -39,18 +41,38 @@ export default function EnrollmentPage() {
             Ready to explore if CRLC is a fit for your family?
           </p>
           <p>
-            We operate on a best-fit model, taking into consideration the balance
-            of each cohort and our volunteer requirements. Fill out this form and
-            we&apos;ll reach out to get the conversation started.
+            If your family is interested in joining our program we invite you to
+            fill out our enrollment application. We operate on a best fit model
+            that takes into consideration the balance of each cohort as well as
+            our volunteer requirements.
           </p>
           <p>
-            Applications are reviewed in the spring. Before confirming enrolment
-            we&apos;ll invite your family to an Open House on the land—a chance to meet
-            our educators and feel into the community for yourselves.
+            Applications are reviewed in the spring to determine available
+            placements. Before confirming enrolment, we will host an Open House
+            where families can visit the land, meet our educators, and learn
+            about our approach.
+          </p>
+          <p>
+            This event helps ensure a good fit for both the child and the
+            community.
+          </p>
+          <p>
+            <em>
+              Please apply only in the year your child will be of school age.
+            </em>
           </p>
         </div>
 
-        <EnrollmentForm />
+        <div className="text-center">
+          <a
+            href="https://docs.google.com/forms/d/1U9fKJprO_Smh11k_NXuLpMhPVlM5To5vKtjExpE4OFk/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-full bg-zinc-900 px-6 py-3 text-sm font-semibold uppercase tracking-widest text-white transition hover:bg-zinc-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-900 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200 dark:focus-visible:outline-white"
+          >
+            Enrollment Application
+          </a>
+        </div>
       </div>
     </div>
   );
